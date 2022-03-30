@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        This is the head
+    </title>
+</head>
+
+<body>
+<h1 id="demo">This is Color Changing Technique</h1>
+<script>
+   
+
+        setInterval( ()=>{
+            let x=document.getElementById("demo");
+            let r=Math.floor(Math.random() * 255);
+            let g=Math.floor(Math.random() * 255);
+            let b=Math.floor(Math.random() * 255);
+            x.style.color="rgb("+r+","+g+","+b+")";
+            /*"rgb("+","+r+","+g+","+b+")";*/
+            console.log(r,g,b);
+        },200);
+        
+    </script>
+</body>
+</html>
